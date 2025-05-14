@@ -2,9 +2,11 @@ MNIST Digit Classifier with Streamlit
 
 This project is a from-scratch implementation of a neural network that classifies handwritten digits from the MNIST dataset. The model is trained using NumPy only (no TensorFlow or PyTorch), and deployed via an interactive Streamlit web app where users can draw digits and get real-time predictions.
 
+
 🚀 Demo
 Draw a digit (0–9) on the canvas and the app will predict what it is!
 ![MnistExamples](https://github.com/user-attachments/assets/25e0e72c-3ea3-4744-9166-3e487fdbe8a2)
+
 
 
 🛠️ Features
@@ -46,6 +48,7 @@ Draw a digit (0–9) on the canvas and the app will predict what it is!
 
 -Final weights are saved to .npy files and used in the Streamlit app
 
+
 🎨 Streamlit App (app.py)
 
 -Users can draw digits using streamlit-drawable-canvas
@@ -59,6 +62,7 @@ Draw a digit (0–9) on the canvas and the app will predict what it is!
 -Predicts top 2 digits with probabilities using the trained model
 
 -Fully interactive UI with options to clear canvas and view processed image
+
 
 📦 Installation
 
@@ -74,22 +78,32 @@ source venv/bin/activate  # On Mac/Linux
 
 pip install -r requirements.txt
 
+
 ▶️ Run the App
 
 Make sure the .npy weight files are present (or run Model.py to train and save them), then launch the app:
 
 streamlit run app.py
 
+
 📁 Project Structure
 
 Image-Classification/
+
 │
+
 ├── Model.py             # Neural network logic and training
+
 ├── app.py               # Streamlit UI for digit drawing and prediction
+
 ├── weight_layer_*.npy   # Trained weights
+
 ├── requirements.txt     # Python dependencies
+
 ├── README.md            # This file
+
 └── .gitignore
+
 
 📚 Dependencies
 
@@ -107,6 +121,7 @@ Image-Classification/
 
 -streamlit-drawable-canvas
 
+
 📊 Sample Output (Training)
 
 Epoch 10: Loss = 0.0175, Accuracy = 95.86%
@@ -123,6 +138,7 @@ Macro Recall: 0.9510
 
 Macro F1 Score: 0.9509
 
+
 🧪 Experiments Included
 
 ✅ Different hidden layers: [256,128,64], [512,256], [64,10], etc.
@@ -133,6 +149,7 @@ Macro F1 Score: 0.9509
 
 ✅ Centering and preprocessing drawn digits for better accuracy
 
+
 📌 To-Do / Future Ideas
 
 ✅ Add UI for architecture selection
@@ -142,6 +159,7 @@ Macro F1 Score: 0.9509
 📦 Convert to a Docker app
 
 🌐 Deploy on Streamlit Cloud or HuggingFace Spaces
+
 
 🧑‍💻 Author
 
