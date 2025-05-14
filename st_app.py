@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 from streamlit_drawable_canvas import st_canvas
 from skimage.transform import resize
-from Bsai23046_Mini_Project import forward_pass, sigmoid
+from Model import forward_pass, sigmoid
 from skimage.filters import gaussian
 
 weights = []
